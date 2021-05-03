@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    min-width: 320px;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.home-body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+a {
+    display: inline;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: grid;
+    width: 100%;
+    height: 140px;
+    grid-template-rows: 50px 90px;
+}
+
+.header-container-icons{
+    display: grid;
+    width: 100%;
+    height: auto;
+    background-color: #41c7a4;
+}
+
+.container__icons  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-self: end;
+    width: 300px;
+    height: auto;
+}
+
+.container__icons svg {
+    width: 30px;
+    height: 30px;
+}
+
+.container__icons svg:hover {
+    fill: #2b2f33;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar__container-logo img {
+
+    max-width: 220px;
+}
+
+.navbar__container-about a {
+    color: black;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border-bottom: 2px solid black;
+}
+
+.navbar__container-about a:hover {
+    border-bottom: 4px dotted;
+}
+
+.navbar__container-about a:active {
+    color: #41c7a4;
+    border-bottom-color: #41c7a4;
+}
+
+.main-home {
+    display: grid;
+    width: 100%;
+    height: calc(100% - 140px);
+    place-content: center;
+    background-image: url("../assets/Cover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.container-text-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    color: white;
+    margin: 0 3rem;
+}
+
+.container-text__span {
+    font-weight: 500;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.container-text__button {
+    font-weight: 700;
+    width: 200px;
+    padding: 15px 30px;
+    background-color: #41c7a4;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.container-text__button:hover {
+    background-color: #309479;
+}
+
+@media (min-width: 900px) {
+
+    .navbar__container-about a {
+        font-size: 1.8rem;
+    }
+    
+}
