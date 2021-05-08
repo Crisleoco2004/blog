@@ -137,11 +137,6 @@ header {
     background-color: #309479;
 }
 
-.container-text__button a{
-    width: 100%;
-    height: 100%;
-}
-
 @media (min-width: 900px) {
 
     .navbar__container-about a {
